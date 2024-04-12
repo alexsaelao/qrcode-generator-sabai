@@ -1,0 +1,47 @@
+{
+  "name": "qrcode-generator-sabai",
+  "version": "1.0.0",
+  "description": "qrcode-generator-sabai is a Node.js package designed to simplify QR code generation from various payloads to images. It offers ease of use and extensive customization options.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsup",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamlex01/qrcode-generator-sabai.git"
+  },
+  "keywords": [
+    "qr",
+    "code",
+    "qrcode",
+    "generate",
+    "qrcode image",
+    "image",
+    "qrcode generate"
+  ],
+  "author": "alex.saelao",
+  "homepage": "https://github.com/iamlex01/qrcode-generator-sabai.git#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/qrcode": "^1.5.5",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.4.4"
+  },
+  "dependencies": {
+    "canvas": "^2.11.2",
+    "qrcode": "^1.5.3"
+  }
+}
+
