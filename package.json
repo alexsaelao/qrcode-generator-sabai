@@ -24,7 +24,11 @@
     "generate",
     "qrcode image",
     "image",
-    "qrcode generate"
+    "qrcode generate",
+    "sabai",
+    "qrcode-generator-sabai",
+    "qrcode-generator",
+    "qrcode-sabai"
   ],
   "author": "alex.saelao",
   "homepage": "https://github.com/iamlex01/qrcode-generator-sabai.git#readme",
