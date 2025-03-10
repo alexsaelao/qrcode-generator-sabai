@@ -1,10 +1,10 @@
-import QRCodeSabai from '../src';
+import QR from '../src';
 
 describe('QRCodeSabai Tests', () => {
 
   // ✅ Test PNG (Default format)
   test('Generate PNG QR code (Default Format)', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', {
+    const result = await QR.generate('Hello World!', {
       filePath: './public',
       fileName: 'qr-code-default',
     });
@@ -13,7 +13,7 @@ describe('QRCodeSabai Tests', () => {
 
   // ✅ Test PNG without logo
   test('Generate PNG QR code', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', {
+    const result = await QR.generate('Hello World!', {
       format: 'png',
       filePath: './public',
       fileName: 'qr-code',
@@ -23,7 +23,7 @@ describe('QRCodeSabai Tests', () => {
 
   // ✅ Test PNG with logo
   test('Generate PNG QR code with Logo', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', {
+    const result = await QR.generate('Hello World!', {
       format: 'png',
       filePath: './public',
       fileName: 'qr-code-logo',
@@ -34,13 +34,13 @@ describe('QRCodeSabai Tests', () => {
 
   // ✅ Test SVG without logo
   test('Generate SVG QR code', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', { format: 'svg' });
+    const result = await QR.generate('Hello World!', { format: 'svg' });
     expect(typeof result).toBe('string');
   });
 
   // ✅ Test SVG with logo
   test('Generate SVG QR code with Logo', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', { 
+    const result = await QR.generate('Hello World!', { 
       format: 'svg',
       logoPath: './public/images/logo.svg' 
     });
@@ -49,7 +49,7 @@ describe('QRCodeSabai Tests', () => {
 
   // ✅ Test SVG file without logo
   test('Generate SVG QR code and save as file', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', {
+    const result = await QR.generate('Hello World!', {
       format: 'svg',
       filePath: './public',
       fileName: 'qr-code',
@@ -59,7 +59,7 @@ describe('QRCodeSabai Tests', () => {
 
   // ✅ Test SVG file with logo
   test('Generate SVG QR code with Logo and save as file', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', {
+    const result = await QR.generate('Hello World!', {
       format: 'svg',
       filePath: './public',
       fileName: 'qr-code-logo',
@@ -70,13 +70,13 @@ describe('QRCodeSabai Tests', () => {
 
   // ✅ Test Base64 without logo
   test('Generate Base64 QR code', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', { format: 'base64' });
+    const result = await QR.generate('Hello World!', { format: 'base64' });
     expect(typeof result).toBe('string');
   });
 
   // ✅ Test Base64 with logo
   test('Generate Base64 QR code with Logo', async () => {
-    const result = await QRCodeSabai.generate('Hello World!', {
+    const result = await QR.generate('Hello World!', {
       format: 'base64',
       logoPath: './public/images/logo.png',
     });

@@ -1,6 +1,6 @@
 import Init from "./lib/init";
-import { eclType, QRCodeOptions } from './types/dataType';
-class QRCodeSabai {
+import { QRCodeOptions } from './types/dataType';
+class QR {
 
     constructor() {}
 
@@ -38,6 +38,6 @@ class QRCodeSabai {
         }
     }
 }
-// ✅ Export both default and named versions
-export default QRCodeSabai;
-export { QRCodeSabai };
+// ✅ Fix export: Works for both CommonJS and ESM
+export { QR };
+export default QR;

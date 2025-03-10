@@ -32,10 +32,10 @@ This package **does NOT work in the browser** because:
 ## 📌 Quick Start (Server-Side Usage)
 
 ```javascript
-const QRCode = require('qrcode-generator-sabai');
+const { QR } = require('qrcode-generator-sabai');
 
 async function generateQRCode() {
-    await QRCode.generate('https://github.com/iamlex01/qrcode-generator-sabai', {
+    await QR.generate('https://github.com/iamlex01/qrcode-generator-sabai', {
         filePath: './public/images',
         fileName: 'qr-code.png'
     });
@@ -51,10 +51,10 @@ generateQRCode().catch(console.error);
 
 ### **1️⃣ Generate a PNG QR Code**
 ```javascript
-const QRCode = require('qrcode-generator-sabai');
+const { QR } = require('qrcode-generator-sabai');
 
 async function generateQRCode() {
-    await QRCode.generate('https://example.com', {
+    await QR.generate('https://example.com', {
         size: 300,
         errorCorrection: 'Q',
         format: 'png',
@@ -71,10 +71,10 @@ generateQRCode().catch(console.error);
 
 ### **2️⃣ Generate an SVG QR Code as a String**
 ```javascript
-const QRCode = require('qrcode-generator-sabai');
+const { QR } = require('qrcode-generator-sabai');
 
 async function generateQRCode() {
-    const svgString = await QRCode.generate('https://example.com', {
+    const svgString = await QR.generate('https://example.com', {
         size: 400,
         errorCorrection: 'H',
         format: 'svg'
@@ -89,10 +89,10 @@ generateQRCode().catch(console.error);
 
 ### **3️⃣ Generate an SVG QR Code and Save as a File**
 ```javascript
-const QRCode = require('qrcode-generator-sabai');
+const { QR } = require('qrcode-generator-sabai');
 
 async function generateQRCode() {
-    await QRCode.generate('https://example.com', {
+    await QR.generate('https://example.com', {
         size: 400,
         errorCorrection: 'H',
         format: 'svg',
@@ -109,10 +109,10 @@ generateQRCode().catch(console.error);
 
 ### **4️⃣ Generate a Base64 QR Code**
 ```javascript
-const QRCode = require('qrcode-generator-sabai');
+const { QR } = require('qrcode-generator-sabai');
 
 async function generateQRCode() {
-    const base64 = await QRCode.generate('https://example.com', {
+    const base64 = await QR.generate('https://example.com', {
         size: 500,
         errorCorrection: 'M',
         format: 'base64'
@@ -127,10 +127,10 @@ generateQRCode().catch(console.error);
 
 ### **5️⃣ Generate a PNG QR Code with a Logo**
 ```javascript
-const QRCode = require('qrcode-generator-sabai');
+const { QR } = require('qrcode-generator-sabai');
 
 async function generateQRCode() {
-    await QRCode.generate('https://example.com', {
+    await QR.generate('https://example.com', {
         size: 400,
         logoPath: './logo.png', 
         format: 'png',
@@ -147,10 +147,10 @@ generateQRCode().catch(console.error);
 
 ### **6️⃣ Generate an SVG QR Code with a Logo**
 ```javascript
-const QRCode = require('qrcode-generator-sabai');
+const { QR } = require('qrcode-generator-sabai');
 
 async function generateQRCode() {
-    await QRCode.generate('https://example.com', {
+    await QR.generate('https://example.com', {
         size: 400,
         logoPath: './logo.svg', 
         format: 'svg',
