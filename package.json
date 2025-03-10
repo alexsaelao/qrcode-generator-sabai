@@ -1,6 +1,6 @@
 {
   "name": "qrcode-generator-sabai",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "description": "qrcode-generator-sabai is a Node.js package designed to simplify QR code generation from various payloads to images. It offers ease of use and extensive customization options.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
