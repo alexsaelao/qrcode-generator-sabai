@@ -8,11 +8,11 @@
 
 ---
 
-## Sample QR code 
+## Sample QR code
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
-<img src="https://github.com/alexsaelao/qrcode-generator-sabai/tree/main/sample/png-with-logo.png" alt="Image 1" style="width: 250px; height: auto;"> 
-<img src="https://github.com/alexsaelao/qrcode-generator-sabai/tree/main/sample/png-without-logo.png" alt="Image 2" style="width: 250px; height: auto;"> 
+    <img src="https://raw.githubusercontent.com/alexsaelao/qrcode-generator-sabai/main/sample/png-with-logo.png" alt="QR Code with Logo" width="250">
+    <img src="https://raw.githubusercontent.com/alexsaelao/qrcode-generator-sabai/main/sample/png-without-logo.png" alt="QR Code without Logo" width="250">
 </div>
 
 ## Overview
