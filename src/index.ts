@@ -1,9 +1,8 @@
 import Init from "./lib/init";
 import { eclType, QRCodeOptions } from './types/dataType';
-export default class QRCodeSabai {
-    private payload: string;
-    private size?: number;
-    private ecl?: eclType;
+class QRCodeSabai {
+
+    constructor() {}
 
     private static validateLogoPath(logoPath: string | null): string | null {
         if (!logoPath) return null;
@@ -13,12 +12,6 @@ export default class QRCodeSabai {
         }
 
         return logoPath;
-    }
-
-    constructor(payload: string, size?: number, ecl?: eclType) {
-        this.payload = payload;
-        this.size = size;
-        this.ecl = ecl;
     }
 
     public static generate(payload: any, options: QRCodeOptions): Promise<string | boolean> {
@@ -45,3 +38,6 @@ export default class QRCodeSabai {
         }
     }
 }
+// ✅ Export both default and named versions
+export default QRCodeSabai;
+export { QRCodeSabai };
